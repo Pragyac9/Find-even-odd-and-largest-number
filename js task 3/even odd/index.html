@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Checker</title>
+    <style>
+        html {
+            --s: 150px;
+            /* control the size */
+
+            background:
+                linear-gradient(135deg, #0000 18.75%, #19033b 0 31.25%, #2b2a2a00 0),
+                repeating-linear-gradient(45deg, #813205 -6.25% 6.25%, #70643d 0 18.75%);
+            background-size: var(--s) var(--s);
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(21, 118, 215);
+            height: 200px;
+            width: 30%;
+            border-radius: 10px 10px 10px 10px;
+
+        }
+
+        input {
+            border: none;
+            outline: none;
+            font-size: larger;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Check if a Number is Odd or Even</h2>
+
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <button onclick="checkOddOrEven()">Check</button>
+
+        <p id="result"></p>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
